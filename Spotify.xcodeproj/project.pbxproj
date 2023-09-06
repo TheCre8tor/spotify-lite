@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		112A13DF2AA840D40063AB2C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A13DE2AA840D40063AB2C /* AuthManager.swift */; };
 		118DDB122A98ADB7009AD08D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118DDB112A98ADB7009AD08D /* AppDelegate.swift */; };
 		118DDB142A98ADB7009AD08D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118DDB132A98ADB7009AD08D /* SceneDelegate.swift */; };
 		118DDB162A98ADB7009AD08D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118DDB152A98ADB7009AD08D /* HomeViewController.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		112A13DE2AA840D40063AB2C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		118DDB0E2A98ADB7009AD08D /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118DDB112A98ADB7009AD08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		118DDB132A98ADB7009AD08D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 		118DDB262A98B8C6009AD08D /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				112A13DE2AA840D40063AB2C /* AuthManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				118DDB302A98D2A6009AD08D /* SearchViewController.swift in Sources */,
+				112A13DF2AA840D40063AB2C /* AuthManager.swift in Sources */,
 				118DDB382A98D454009AD08D /* WelcomeViewController.swift in Sources */,
 				118DDB3C2A98D471009AD08D /* ProfileViewController.swift in Sources */,
 				118DDB2E2A98BED5009AD08D /* TabBarViewController.swift in Sources */,
