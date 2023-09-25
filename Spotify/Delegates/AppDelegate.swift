@@ -19,9 +19,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             window.rootViewController = TabBarViewController();
         } else {
             let controller = WelcomeViewController();
-            let welcome = UINavigationController(rootViewController: controller);
+            let navVC = UINavigationController(rootViewController: controller);
+            navVC.navigationBar.prefersLargeTitles = true;
+            navVC.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always;
             
-            window.rootViewController = welcome;
+            window.rootViewController = navVC;
         }
     
         window.makeKeyAndVisible();
