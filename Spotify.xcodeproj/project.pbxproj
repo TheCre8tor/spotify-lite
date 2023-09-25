@@ -27,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		112A13DE2AA840D40063AB2C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		116071302AC1C2F90072008C /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		118DDB0E2A98ADB7009AD08D /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118DDB112A98ADB7009AD08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		118DDB132A98ADB7009AD08D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		116071332AC1CE9B0072008C /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				116071302AC1C2F90072008C /* Debug.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		118DDB052A98ADB7009AD08D = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +85,7 @@
 		118DDB102A98ADB7009AD08D /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
+				116071332AC1CE9B0072008C /* Configs */,
 				118DDB2C2A98B92F009AD08D /* Delegates */,
 				118DDB2B2A98B903009AD08D /* Controllers */,
 				118DDB2A2A98B8F7009AD08D /* Views */,
@@ -272,6 +282,7 @@
 /* Begin XCBuildConfiguration section */
 		118DDB202A98ADB8009AD08D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116071302AC1C2F90072008C /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -302,6 +313,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIG_FILE = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -332,6 +344,7 @@
 		};
 		118DDB212A98ADB8009AD08D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116071302AC1C2F90072008C /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -362,6 +375,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIG_FILE = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -386,10 +400,12 @@
 		};
 		118DDB232A98ADB8009AD08D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116071302AC1C2F90072008C /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CONFIG_FILE = "";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Spotify/Info.plist;
@@ -412,10 +428,12 @@
 		};
 		118DDB242A98ADB8009AD08D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 116071302AC1C2F90072008C /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CONFIG_FILE = "";
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Spotify/Info.plist;
