@@ -8,8 +8,8 @@
 import Foundation
 
 struct Constants {
-    static let clientID = ProcessInfo.processInfo.environment["CLIENT_ID"]
-    static let clientSecret = ProcessInfo.processInfo.environment["CLIENT_SECRET"]
+    static let clientID = ""
+    static let clientSecret = ""
 }
 
 final class AuthManager {
@@ -18,10 +18,6 @@ final class AuthManager {
     private init() {}
     
     var isSignedIn: Bool {
-        if let userID = ProcessInfo.processInfo.environment["CLIENT_SECRET"] {
-           print("UserID: \(userID)")
-        }
-        
         return false;
     }
     
