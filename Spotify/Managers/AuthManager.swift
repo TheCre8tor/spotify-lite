@@ -8,8 +8,8 @@
 import Foundation
 
 struct Constants {
-    static let clientID = ""
-    static let clientSecret = ""
+    static let client_id = Environment.client_id;
+    static let client_secret = Environment.client_secret;
 }
 
 final class AuthManager {
