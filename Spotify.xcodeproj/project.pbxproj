@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		112A13DF2AA840D40063AB2C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A13DE2AA840D40063AB2C /* AuthManager.swift */; };
 		113C4D452AC77D7600DBD039 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C4D442AC77D7600DBD039 /* Environment.swift */; };
+		113C4D472AC803A000DBD039 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113C4D462AC803A000DBD039 /* Extensions.swift */; };
 		118DDB122A98ADB7009AD08D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118DDB112A98ADB7009AD08D /* AppDelegate.swift */; };
 		118DDB142A98ADB7009AD08D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118DDB132A98ADB7009AD08D /* SceneDelegate.swift */; };
 		118DDB162A98ADB7009AD08D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118DDB152A98ADB7009AD08D /* HomeViewController.swift */; };
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		112A13DE2AA840D40063AB2C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		113C4D442AC77D7600DBD039 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		113C4D462AC803A000DBD039 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		116071302AC1C2F90072008C /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		118DDB0E2A98ADB7009AD08D /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		118DDB112A98ADB7009AD08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				118DDB1A2A98ADB8009AD08D /* Assets.xcassets */,
+				113C4D462AC803A000DBD039 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				118DDB122A98ADB7009AD08D /* AppDelegate.swift in Sources */,
 				118DDB322A98D363009AD08D /* LibraryViewController.swift in Sources */,
 				118DDB402A98D48D009AD08D /* PlaylistViewController.swift in Sources */,
+				113C4D472AC803A000DBD039 /* Extensions.swift in Sources */,
 				118DDB142A98ADB7009AD08D /* SceneDelegate.swift in Sources */,
 				118DDB3E2A98D480009AD08D /* PlayerViewController.swift in Sources */,
 				118DDB422A98D57E009AD08D /* SearchResultViewController.swift in Sources */,

@@ -9,7 +9,7 @@ import UIKit;
 import WebKit;
 
 class AuthViewController: UIViewController, WKNavigationDelegate {
-    /// This is an anornymous function
+    /// This is an anonymous function
     private let webView: WKWebView = {
         let prefs = WKWebpagePreferences();
         prefs.allowsContentJavaScript = true;
@@ -19,6 +19,8 @@ class AuthViewController: UIViewController, WKNavigationDelegate {
         
         return WKWebView(frame: .zero, configuration: config);
     }()
+    
+    public var completionHandler: ((Bool) -> Void)?;
 
     override func viewDidLoad() {
         super.viewDidLoad();
