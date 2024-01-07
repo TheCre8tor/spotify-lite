@@ -21,12 +21,13 @@ final class AuthManager {
         let state = String.random(length: 16);
         let scope = "user-read-private user-read-email";
         let redirect_uri = "https://github.com/thecre8tor";
+        let base = "https://accounts.spotify.com/authorize?";
         
-        let string = "https://accounts.spotify.com/authorize?" +
+        let string = base +
         "response_type = code" +
         "&client_id = \(Constants.client_id)" +
         "&scope = \(scope)" +
-        "&redirect_uri = \(redirect_uri)" +
+        "&redirect_uri = \(redirect_uri)" +  
         "&state = \(state)"
      
         return URL(string: string);
@@ -48,7 +49,7 @@ final class AuthManager {
         return Optional.none;
     }
     
-    private var shouldRefreshToken: Optional<Bool> {
+    private var shouldRefreshToken: Bool {
         return false;
     }
 }
