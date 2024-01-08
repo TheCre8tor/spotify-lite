@@ -30,10 +30,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.makeKeyAndVisible();
         self.window = window;
         
-        let url: String? = AuthManager.shared.signInURL?.absoluteString
-        
-        print("Spotify URL: \(String(describing: url))");
-        
         return true
     }
 

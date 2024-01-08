@@ -34,9 +34,10 @@ class WelcomeViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews();
         
+        // This is where we position the button to the screen
         signInButton.frame = CGRect(
             x: 20,
-            y: view.height - 50 - view.safeAreaInsets.bottom,
+            y: (view.height - 50) - view.safeAreaInsets.bottom,
             width: view.width - 40,
             height: 50
         );
@@ -45,12 +46,15 @@ class WelcomeViewController: UIViewController {
     
     @objc func didTapSignIn() {
         let vc = AuthViewController();
+        
         vc.completionHandler = { [weak self] success in
             DispatchQueue.main.async {
                 self?.handleSignIn(success: success)
             }
         }
         vc.navigationItem.largeTitleDisplayMode = .never;
+        
+        // We are pushing the AuthViewController to the screen right here
         navigationController?.pushViewController(vc, animated: true);
     }
     
